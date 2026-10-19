@@ -10,3 +10,90 @@
 # CampGuide_Web
 MyCampGuide is a full-stack web application that allows users to discover camping spots in Olympos and make database-backed online reservations.  It also features embedded instructional videos and general guides covering essential camping tips and techniques.
 
+
+<div align="center">
+
+# **Kamp Rehberim**
+
+**The Easiest Way to Meet Nature**
+
+Campgrounds, guide videos, and essential camping tips in one place.
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+
+</div>
+
+---
+
+## **About**
+
+**Kamp Rehberim** ("My Camping Guide") is a camping website where users can browse campgrounds in Olympos, make reservations, watch guide videos, and read safety tips. Registration and reservation data are stored in a MySQL database.
+
+---
+
+## **Features**
+
+- **Campgrounds:** Browse Olympos campgrounds with prices and descriptions
+- **Reservations:** Book a stay online, saved directly to the database
+- **Membership:** Sign up and log in, with passwords hashed using bcrypt
+- **Guide Videos:** Tent setup, camping essentials, and safe fire-making
+- **Camping Tips:** Insects, wildlife, packing list, fire safety, and emergencies
+- **About Olympos:** History of the ancient city and the camping region
+
+---
+
+## **Built With**
+
+**Front End:** HTML, CSS, JavaScript  
+**Back End:** Node.js, Express  
+**Database:** MySQL, Sequelize
+
+---
+
+## **Project Structure**
+
+```
+campprojeweb/
+├── index.html              # Home page
+├── campgrounds.html        # Campgrounds and reservations
+├── olympos.html            # About Olympos
+├── videos.html             # Informative videos
+├── articles.html           # Camping tips
+├── login.html              # Login page
+├── register.html           # Registration page
+├── style.css               # Shared stylesheet
+├── server.js               # Authentication server (port 3000)
+├── reservationServer.js    # Reservation server (port 3001)
+└── package.json
+```
+
+---
+
+## **Getting Started**
+
+```bash
+git clone https://github.com/your-username/campprojeweb.git
+cd campprojeweb
+npm install
+node server.js
+node reservationServer.js
+```
+
+Make sure a local MySQL server (e.g. XAMPP) is running, then open **http://localhost:3000**.
+
+---
+
+## **Note**
+
+This is an educational project intended for local use. Review security settings before deploying publicly.
+
+---
+
+## **Developer**
+
+**Irmak Göçerler**
