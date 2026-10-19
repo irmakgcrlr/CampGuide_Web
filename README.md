@@ -13,14 +13,17 @@ MyCampGuide is a full-stack web application that allows users to discover campin
 
 <div align="center">
 
+# **Kamp Rehberim**
 
-About
+**The Easiest Way to Meet Nature**
 
-**Kamp Rehberim** ("My Camping Guide") is a camping website where users can browse campgrounds in Olympos, make reservations, watch guide videos, and read safety tips. Registration and reservation data are stored in a MySQL database.
+Campgrounds, guide videos, and essential camping tips in one place.
+
+</div>
 
 ---
 
-Features
+## **Features**
 
 - **Campgrounds:** Browse Olympos campgrounds with prices and descriptions
 - **Reservations:** Book a stay online, saved directly to the database
@@ -31,14 +34,16 @@ Features
 
 ---
 
-Built With
+## **Built With**
 
-**Front End:** HTML, CSS, JavaScript  
-**Back End:** Node.js, Express  
-**Database:** MySQL, Sequelize
+- **Front End:** HTML, CSS, JavaScript
+- **Back End:** Node.js, Express
+- **Database:** MySQL, Sequelize
 
 ---
-Project Structure
+
+## **Project Structure**
+
 ```
 campprojeweb/
 ├── index.html              # Home page
@@ -53,9 +58,10 @@ campprojeweb/
 ├── reservationServer.js    # Reservation server (port 3001)
 └── package.json
 ```
+
 ---
 
-Getting Started
+## **Getting Started**
 
 ```bash
 git clone https://github.com/your-username/campprojeweb.git
@@ -74,5 +80,7 @@ Make sure a local MySQL server (e.g. XAMPP) is running, then open **http://local
 This is an educational project intended for local use. Review security settings before deploying publicly.
 
 ---
+
+
 
 **Irmak Göçerler**
