@@ -57,6 +57,9 @@ campprojeweb/
 ├── reservationServer.js    # Reservation server (port 3001)
 └── package.json
 ```
+![OlympOS Reservations](./Assets/olympos_reservations_blur.png)
+
+![OlympOS](./Assets/olympos.png)
 
 ---
 
