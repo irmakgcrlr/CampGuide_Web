@@ -74,12 +74,6 @@ Make sure a local MySQL server (e.g. XAMPP) is running, then open **http://local
 
 ---
 
-## **Note**
-
-This is an educational project intended for local use. Review security settings before deploying publicly.
-
----
-
 
 
 **Irmak Göçerler**
