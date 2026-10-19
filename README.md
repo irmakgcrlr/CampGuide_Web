@@ -13,7 +13,6 @@ MyCampGuide is a full-stack web application that allows users to discover campin
 
 <div align="center">
 
-# **Kamp Rehberim**
 
 **The Easiest Way to Meet Nature**
 
