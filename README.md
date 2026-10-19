@@ -22,6 +22,9 @@ Campgrounds, guide videos, and essential camping tips in one place.
 
 ---
 
+![OlympOS](./Assets/olympos.png)
+
+
 ## **Features**
 
 - **Campgrounds:** Browse Olympos campgrounds with prices and descriptions
@@ -41,6 +44,8 @@ Campgrounds, guide videos, and essential camping tips in one place.
 
 ---
 
+![OlympOS Reservations](./Assets/olympos_reservations_blurred.png)
+
 ## **Project Structure**
 
 ```
@@ -57,9 +62,6 @@ campprojeweb/
 ├── reservationServer.js    # Reservation server (port 3001)
 └── package.json
 ```
-![OlympOS Reservations](./Assets/olympos_reservations_blur.png)
-
-![OlympOS](./Assets/olympos.png)
 
 ---
 
