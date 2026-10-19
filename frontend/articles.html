@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kamp Bilgileri</title>
+  <link rel="stylesheet" href="style.css" />
+
+<style>
+  /* Genel sayfa stili ve arka plan */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url('https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=2070&q=80') no-repeat center center fixed;
+    background-size: cover;
+    color: #1b4332;
+  }
+
+  header {
+    width: 100%;
+    background: rgba(27, 67, 50, 0.9);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  header nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  header nav a:hover {
+    color: #b7e4c7;
+  }
+
+  .container {
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container h2 {
+    font-family: 'Georgia', serif;
+    color: #b7e4c7;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    border-bottom: 3px solid #b7e4c7;
+    padding-bottom: 10px;
+  }
+
+  .info-card {
+    background: rgba(255,255,255,0.95);
+    color: #1b4332;
+    padding: 25px;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+    max-width: 800px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 35px rgba(0,0,0,0.4);
+  }
+
+  .info-card h3 {
+    font-family: 'Verdana', sans-serif;
+    color: #2d6a4f;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  .info-card h4 {
+    color: #d00000;
+    font-size: 18px;
+    border-left: 3px solid #d00000;
+    padding-left: 10px;
+    margin-top: 15px;
+  }
+
+  .emergency-box {
+    border-left: 5px solid #d00000;
+    background: #ffe5e5;
+    padding: 12px 15px;
+    margin: 12px 0;
+    border-radius: 8px;
+  }
+
+  ul {
+    margin-left: 20px;
+  }
+
+  p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+  /* Responsive ayarlar */
+  @media screen and (max-width: 900px) {
+    .info-card {
+      width: 90%;
+      padding: 20px;
+    }
+
+    header nav a {
+      margin-left: 10px;
+      font-size: 14px;
+    }
+
+    .container h2 {
+      font-size: 28px;
+    }
+
+    .info-card h3 {
+      font-size: 22px;
+    }
+
+    .info-card h4 {
+      font-size: 16px;
+    }
+  }
+
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🏕️ Kamp Rehberi</div>
+  <nav>
+    <a href="index.html">Ana Sayfa</a>
+    <a href="campgrounds.html">Kamp Alanları</a>
+    <a href="videos.html">Videolar</a>
+    <a href="login.html">Giriş</a>
+    <a href="olympos.html">Olympos Hakkında</a>
+  </nav>
+</header>
+
+<section class="container">
+  <h2>Kamp Bilgileri</h2>
+
+  <section class="info-card">
+    <h3>🐜 Böcek Isırığı ve Önlemler</h3>
+    <p>
+      Kamp sırasında böcek ısırmaları sık yaşanabilir. Isırıldığında bölgeyi sabun ve su ile temizleyin, kaşımaktan kaçının. Şişliği ve kaşıntıyı azaltmak için soğuk kompres uygulayın. Gerekirse anti-alerjik krem veya aloe vera jeli kullanabilirsiniz.
+    </p>
+    <p>
+      Ciddi alerjik belirtiler (nefes darlığı, dudak/yanak şişmesi, yüksek ateş) görüldüğünde hemen doktora başvurun.
+    </p>
+    <h4>🦟 Böceklerden Korunma Tavsiyeleri:</h4>
+    <ul>
+      <li>Böcek kovucu sprey veya losyon kullanın.</li>
+      <li>Uzun kollu gömlek ve pantolon tercih edin.</li>
+      <li>Akşamları parfüm ve kokulu ürünlerden uzak durun.</li>
+      <li>Uyurken sineklik veya kapalı çadır kullanın.</li>
+    </ul>
+  </section>
+
+  <section class="info-card">
+    <h3>🦌 Vahşi Hayvanlarla Karşılaşma Durumu</h3>
+    <p>
+      Kamp sırasında dağlık veya ormanlık alanlarda küçük ve büyük vahşi hayvanlarla karşılaşabilirsiniz. Genellikle hayvanlar insanlardan uzak durur, ancak dikkatli olmak önemlidir.
+    </p>
+    <p>
+      Karşılaştığınızda hayvanlara yaklaşmayın, yiyecekleri bırakmayın ve ani hareketlerden kaçının. Evcil hayvanlarla kamp yapıyorsanız onları kontrol altında tutun. 
+    </p>
+    <h4>🐾 Güvenlik Tavsiyeleri:</h4>
+    <ul>
+      <li>Gece yürüyüşleri yaparken sessiz olun ve ışık kullanın.</li>
+      <li>Yiyecekleri kamp alanında kapalı ve güvenli şekilde saklayın.</li>
+      <li>Hayvanları rahatsız edecek ses veya hareketlerden kaçının.</li>
+      <li>Özellikle yılan, böcek ve küçük sürüngenlere dikkat edin.</li>
+    </ul>
+  </section>
+
+  <section class="info-card">
+    <h3>🎒 Yanımızda Neler Getirmeliyiz?</h3>
+    <p>
+      Kamp yaparken yanınıza almanız gereken malzemeler hem konforunuzu artırır hem de olası risklere karşı sizi hazırlar. Hava durumuna göre hazırlıklı olmak önemlidir; gece ve sabahları serin olabilir.
+    </p>
+    <h4>🛠️ Önerilen Malzemeler:</h4>
+    <ul>
+      <li>Çadır, mat ve uyku tulumu (gece üşümemek için kaliteli tulum tercih edin)</li>
+      <li>Hafif ve uzun kollu giysiler, yağmurluk veya rüzgarlık</li>
+      <li>Güneş kremi, şapka ve güneş gözlüğü</li>
+      <li>Yeterli miktarda su ve yiyecek</li>
+      <li>Kamp ocağı, mutfak gereçleri ve çatal-bıçak seti</li>
+      <li>Fener veya kafa lambası, ekstra piller</li>
+      <li>Böcek kovucu sprey ve küçük ilk yardım çantası</li>
+      <li>Hafif battaniye veya ekstra katmanlı giysiler (serin geceler için)</li>
+    </ul>
+    <p>
+      Hava ani değişebilir, bu yüzden hem sıcak hem de serin havaya uygun giysiler getirmeniz tavsiye edilir. Ayrıca kamp alanına giderken çöp poşeti ve kişisel hijyen ürünlerini de unutmayın.
+    </p>
+  </section>
+
+  <section class="info-card">
+    <h3>🔥 Kamp Ateşi Yönetimi: Nasıl Yapılır?</h3>
+    <p>Doğru ateş yönetimi hem doğayı korur hem de can güvenliğinizi sağlar. İşte adım adım güvenli ateş yakma rehberi:</p>
+    <div class="step">
+      <strong>1. Ateş Yakmadan Önce (Hazırlık):</strong>
+      <ul>
+        <li>Zemin Temizliği: Ateş yakacağınız alanın etrafındaki kuru otları ve yaprakları temizleyin.</li>
+        <li>Taş Bariyer: Ateşin etrafını büyük taşlarla çevreleyin.</li>
+        <li>Su ve Kürek: Ateşin yanında her zaman dolu bir kova su veya bir kürek toprak bulundurun.</li>
+        <li>Rüzgar Kontrolü: Çok rüzgarlı havalarda ateş yakmayın.</li>
+      </ul>
+    </div>
+    <div class="step">
+      <strong>2. Ateş Başında (Kontrol):</strong>
+      <p>Ateşi her zaman yönetebileceğiniz boyutta, küçük tutun. Ateşin başından ayrılacaksanız, mutlaka bir başkasının başında durduğundan emin olun.</p>
+    </div>
+    <div class="step">
+      <strong>3. Ateşi Söndürme (Kapanış):</strong>
+      <p>Suyu doğrudan üzerine dökmek yerine karıştırarak söndürün. Sıcaklık hissetmeyene kadar devam edin.</p>
+    </div>
+  </section>
+
+  <section class="info-card emergency-box">
+    <h3>⚠️ Kötü Durumlarda Ne Yapmalıyız?</h3>
+    <p>İşler kontrolden çıkarsa sakin kalmak ve doğru adımı atmak hayat kurtarır:</p>
+    <h4>Ateş Kontrolden Çıkarsa:</h4>
+    <ul>
+      <li>Hemen müdahale edin: Ateş taşların dışına taşarsa su, kum veya toprakla söndürün.</li>
+      <li>Kaçış Yönü: Rüzgarı arkanıza almayın, yangının ilerleme hattından uzaklaşın.</li>
+      <li>112'yi Arayın: Kendi imkanlarınızla söndüremediyseniz, hemen 112’yi arayın.</li>
+    </ul>
+  </section>
+
+</section>
+
+</body>
+</html>
+

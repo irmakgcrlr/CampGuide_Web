@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Olympos Kamp Alanları</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=2070&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: rgba(27, 67, 50, 0.85);
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section.container {
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 15px;
+      width: 300px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(5px);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      margin: 10px 0 5px;
+    }
+
+    .card p {
+      font-size: 14px;
+    }
+
+    .card button {
+      background-color: #1b4332;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .card button:hover {
+      background-color: #2d6a4f;
+    }
+
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 2000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .modal-content {
+      background: rgba(255, 255, 255, 0.95);
+      margin: 10% auto;
+      padding: 20px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 400px;
+      color: #000;
+      position: relative;
+    }
+
+    .modal-content input,
+    .modal-content label,
+    .modal-content button {
+      display: block;
+      width: 100%;
+      margin: 8px 0;
+    }
+
+    .modal-content button {
+      background-color: #1b4332;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .modal-content button:hover {
+      background-color: #2d6a4f;
+    }
+
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 24px;
+      cursor: pointer;
+      color: #1b4332;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">🏕️ Kamp Rehberi</div>
+    <nav> <a href="videos.html">Videolar</a> <a href="articles.html">Bilgiler</a> <a href="index.html">Ana Sayfa</a> <a
+        href="olympos.html">Olympos Hakkında</a> <a href="login.html">Giriş</a> </nav>
+  </header>
+  <section class="container">
+    <h2>Olympos Kamp Alanları</h2>
+    <div class="grid">
+      <div class="card" data-name="Hala'nın Yeri" data-price="400"> <img
+          src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+        <h3>Hala'nın Yeri Kamp Alanı</h3>
+        <p>Olympos • 400₺ / gece</p>
+        <p>Olimpos Plajına kısa bir yürüyüş mesafesinde yeşil alanda konaklama imkanı.</p> <button>Rezervasyon
+          Yap</button>
+      </div>
+      <div class="card" data-name="Korsan Camping" data-price="600"> <img
+          src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+        <h3>Korsan Camping</h3>
+        <p>Olympos • 600₺ / gece</p>
+        <p>Doğayla iç içe huzurlu bir kamp deneyimi ve denize yakınlık.</p> <button>Rezervasyon Yap</button>
+      </div>
+      <div class="card" data-name="Orange Camping" data-price="400"> <img
+          src="https://images.unsplash.com/photo-1533873984035-25970ab07461">
+        <h3>Orange Camping</h3>
+        <p>Olympos • 400₺ / gece</p>
+        <p>Ücretsiz kablosuz internet, restoran ve elektrik imkanı.</p> <button>Rezervasyon Yap</button>
+      </div>
+      <div class="card" data-name="Lotus Camping" data-price="850"> <img
+          src="https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7">
+        <h3>Lotus Camping</h3>
+        <p>Olympos • 850₺ / gece</p>
+        <p>Lüks çadır deneyimi ve klimalı seçenekler.</p> <button>Rezervasyon Yap</button>
+      </div>
+      <div class="card" data-name="Geledonia Camping" data-price="400"> <img
+          src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+        <h3>Geledonia Camping</h3>
+        <p>Olympos • 400₺ / gece</p>
+        <p>Antik kent girişine ve Likya yoluna çok yakın.</p> <button>Rezervasyon Yap</button>
+      </div>
+      <div class="card" data-name="Asilay Camping" data-price="400"> <img
+          src="https://images.unsplash.com/photo-1478131143081-80f7f84ca84d">
+        <h3>Asilay Camping</h3>
+        <p>Olympos • 400₺ / gece</p>
+        <p>Tarihi ve doğal güzellikleri keşfetmek için ideal konum.</p> <button>Rezervasyon Yap</button>
+      </div>
+    </div>
+  </section> <!-- Rezervasyon Modal -->
+  <div id="reservationModal" class="modal">
+    <div class="modal-content"> <span class="close">&times;</span>
+      <h3 id="modalCampName">Rezervasyon Yap</h3>
+      <form id="reservationForm"> <label>Ad Soyad:</label> <input type="text" name="fullname" required> <label>E-mail /
+          Telefon:</label> <input type="text" name="contact" required> <label>Kişi Sayısı:</label> <input type="number"
+          name="people" min="1" required> <label>Giriş Tarihi:</label> <input type="date" name="checkin" required>
+        <label>Çıkış Tarihi:</label> <input type="date" name="checkout" required> <button type="submit">Gönder</button>
+      </form>
+      <p id="successMsg" style="color: #1b4332; display: none;">Rezervasyonunuz alındı!</p>
+    </div>
+  </div>
+
+ <script>
+  // Rezervasyon modal script
+  const buttons = document.querySelectorAll('.card button');
+  const modal = document.getElementById('reservationModal');
+  const closeBtn = document.querySelector('.close');
+  const modalCampName = document.getElementById('modalCampName');
+  const successMsg = document.getElementById('successMsg');
+  const form = document.getElementById('reservationForm');
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const card = btn.closest('.card');
+      const campName = card.querySelector('h3').innerText;
+
+      // ❗ HATA BURADAYDI → DÜZELTİLDİ
+      modalCampName.innerText = `Rezervasyon Yap - ${campName}`;
+
+      successMsg.style.display = 'none';
+      modal.style.display = 'block';
+    });
+  });
+
+  closeBtn.addEventListener('click', () => modal.style.display = 'none');
+  window.addEventListener('click', e => {
+    if (e.target == modal) modal.style.display = 'none';
+  });
+
+  // 🔴 ASIL ÖNEMLİ KISIM (NODE.JS + MYSQL)
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    const checkin = new Date(form.checkin.value);
+    const checkout = new Date(form.checkout.value);
+
+    if (checkout <= checkin) {
+      alert("Çıkış tarihi giriş tarihinden önce olamaz!");
+      return;
+    }
+
+    const data = {
+      camp_name: modalCampName.innerText,
+      fullname: form.fullname.value,
+      contact: form.contact.value,
+      people: form.people.value,
+      checkin: form.checkin.value,
+      checkout: form.checkout.value
+    };
+
+    fetch("http://localhost:3001/olympos-reserve", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
+    })
+      .then(res => res.text())
+      .then(result => {
+        if (result === "ok") {
+          successMsg.style.display = 'block';
+          form.reset();
+        } else {
+          alert("Kayit yapilamadi");
+        }
+      })
+      .catch(() => {
+        alert("Servera baglanilamadi");
+      });
+  });
+</script>
+
+
+</body>
+
+</html>

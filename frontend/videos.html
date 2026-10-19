@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kamp Videoları</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Genel Arka Plan ve Font */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                  url('https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=2070&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #1b4332;
+    }
+
+    header {
+      width: 100%;
+      background: rgba(27, 67, 50, 0.9);
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    header nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    header nav a:hover {
+      color: #b7e4c7;
+    }
+
+    .container {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .container h2 {
+      font-family: 'Georgia', serif;
+      color: #b7e4c7;
+      font-size: 36px;
+      margin-bottom: 40px;
+      border-bottom: 3px solid #b7e4c7;
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.95);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+      transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      background: #f0fdf4;
+      box-shadow: 0 20px 35px rgba(0,0,0,0.4);
+    }
+
+    iframe {
+      width: 100%;
+      aspect-ratio: 16/9;
+      border-radius: 10px;
+      border: none;
+    }
+
+    .card h3 {
+      font-family: 'Verdana', sans-serif;
+      color: #2d6a4f;
+      margin-top: 15px;
+      font-size: 20px;
+      letter-spacing: 0.5px;
+      transition: color 0.3s ease;
+    }
+
+    .card:hover h3 {
+      color: #1b4332;
+    }
+
+    @media screen and (max-width: 900px) {
+      .container h2 {
+        font-size: 28px;
+      }
+
+      .card h3 {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🏕️ Kamp Rehberi</div>
+  <nav>
+    <a href="index.html">Ana Sayfa</a>
+    <a href="campgrounds.html">Kamp Alanları</a>
+    <a href="olympos.html">Olympos Hakkında</a>
+    <a href="articles.html">Bilgiler</a>
+    <a href="login.html">Giriş</a>
+  </nav>
+</header>
+
+<section class="container">
+  <h2>Bilgilendirici Videolar</h2>
+
+  <div class="grid">
+    <div class="card">
+      <iframe src="https://www.youtube.com/embed/Kq5i5yKhS0s?si=XKkLWVivxNuKEY6h" 
+          title="YouTube video player" 
+          allowfullscreen></iframe>
+      <h3>Çadır Nasıl Kurulur?</h3>
+    </div>
+
+    <div class="card">
+       <iframe src="https://www.youtube.com/embed/WaznsAgb1WM?si=_tQcoLSPl0b7JxxO" 
+          title="YouTube video player" 
+          allowfullscreen></iframe>
+      <h3>Kampa Giderken Ne Lazım?</h3>
+    </div>
+    
+    <div class="card">
+       <iframe src="https://www.youtube.com/embed/TfNkUIVLj-Q?si=-vQV6mK7Gt4COanN" 
+              title="YouTube video player" allowfullscreen></iframe>
+      <h3>Güvenli Ateş Yakma</h3>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
+

@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+  color: #333;
+}
+
+/* NAVBAR */
+header {
+  background: #1b4332;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 16px;
+  /* EKLEME: Yumuşak geçiş için */
+  transition: all 0.3s ease; 
+}
+
+/* EKLEME: İstediğin Navigasyon Hover Efekti */
+nav a:hover {
+  color: #b7e4c7; /* Üstüne gelince renk değişir */
+  text-decoration: none;
+  transform: scale(1.1); /* Hafif büyüme */
+}
+
+/* HERO */
+.hero {
+  height: 85vh;
+  background: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470")
+    center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 20px;
+  max-width: 600px;
+}
+
+/* CONTAINER */
+.container {
+  width: 80%;
+  margin: 60px auto;
+}
+
+/* CARDS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  /* GÜNCELLEME: Senin transition süreni biraz artırdım ki renk değişimi görülsün */
+  transition: all 0.3s ease; 
+}
+
+/* EKLEME: İstediğin Kart Hover Efekti */
+.card:hover {
+  transform: scale(1.03);
+  background-color: #f0fdf4; /* Üstüne gelince hafif yeşil arka plan */
+  border: 1px solid #2d6a4f;
+}
+
+.card p:last-of-type {
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card button {
+  padding: 10px 15px;
+  background: #2d6a4f;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* EKLEME: Buton Hover Efekti */
+.card button:hover {
+  background: #1b4332; /* Üstüne gelince buton kararır */
+}
+
+/* VIDEO */
+iframe {
+  width: 100%;
+  height: 220px;
+  border: none;
+}
+
+/* FORM */
+form {
+  max-width: 400px;
+  margin: 80px auto;
+  background: #fff;
+  padding: 30px;
+}
+
+form input,
+form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+form button {
+  background: #2d6a4f;
+  color: #fff;
+  border: none;
+}
+
+.filter {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.filter input {
+  padding: 10px;
+  width: 200px;
+}
+
+/* Container’ın üst kısmına sticky yap */
+#filterBar {
+  position: sticky;
+  top: 10px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  z-index: 500;
+}
+
+#filterBar input {
+  padding: 10px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+
